@@ -1,0 +1,12 @@
+# Build artifacts
+build
+dist
+
+# Generated files (already in .gitignore, but Prettier-specific)
+next-env.d.ts
+
+# Logs
+*.log
+
+# Temporary files (e.g., editor-specific)
+*.swp
