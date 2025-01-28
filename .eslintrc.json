@@ -1,26 +1,68 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript", "prettier"],
-  "plugins": ["react", "import", "@typescript-eslint", "markdown"],
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "prettier",
+    "plugin:storybook/recommended"
+  ],
+  "plugins": [
+    "react",
+    "import",
+    "@typescript-eslint",
+    "markdown"
+  ],
   "rules": {
-    "quotes": ["error", "single", { "avoidEscape": true }],
-    "semi": ["error", "always"],
-    "arrow-parens": ["error", "always"],
-    "indent": ["error", 2],
-    "max-len": ["error", { "code": 80, "ignoreUrls": true }],
-
-    "eqeqeq": ["error", "always"],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "arrow-parens": [
+      "error",
+      "always"
+    ],
+    "indent": [
+      "error",
+      2
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 80,
+        "ignoreUrls": true
+      }
+    ],
+    "eqeqeq": [
+      "error",
+      "always"
+    ],
     "no-console": "warn",
-    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
-
+    "no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
-    "react/jsx-indent": ["error", 2],
+    "react/jsx-indent": [
+      "error",
+      2
+    ],
     "react/jsx-curly-spacing": [
       "error",
-      { "when": "always", "children": true }
+      {
+        "when": "always",
+        "children": true
+      }
     ],
-
     "import/order": [
       "error",
       {
@@ -32,25 +74,33 @@
           "sibling",
           "index"
         ],
-        "alphabetize": { "order": "asc", "caseInsensitive": true }
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
       }
     ],
     "import/newline-after-import": "error",
-
     "@typescript-eslint/no-unused-vars": [
       "warn",
-      { "argsIgnorePattern": "^_" }
+      {
+        "argsIgnorePattern": "^_"
+      }
     ],
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/explicit-function-return-type": "off"
   },
   "overrides": [
     {
-      "files": ["**/*.md"],
+      "files": [
+        "**/*.md"
+      ],
       "processor": "markdown/markdown"
     },
     {
-      "files": ["**/*.md/*.js"],
+      "files": [
+        "**/*.md/*.js"
+      ],
       "rules": {
         "no-console": "off"
       }
