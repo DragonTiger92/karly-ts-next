@@ -28,6 +28,14 @@ libraries ( e.g., react-hook-form )
 - `react-hook-form`
 - `zod`
 
+## Documents
+
+### Requirements & Design
+
+- [PRD ( Product Requirements Document )](https://productive-printer-b81.notion.site/8da1841590ad4b05b28ec0d0d61dae42)
+
+- [Design Mockups & Prototypes](https://www.figma.com/design/Jm4FOBWLsQxsrZvn5LZOgI/%EB%A7%88%EC%BC%93%EC%B9%BC%EB%A6%AC?node-id=0-1&t=TnpgNWbxyQeJcy09-1)
+
 ## Miscellaneous
 
 ### Branching Strategy
