@@ -36,6 +36,13 @@ libraries ( e.g., react-hook-form )
 
 - [Design Mockups & Prototypes](https://www.figma.com/design/Jm4FOBWLsQxsrZvn5LZOgI/%EB%A7%88%EC%BC%93%EC%B9%BC%EB%A6%AC?node-id=0-1&t=TnpgNWbxyQeJcy09-1)
 
+### Ground Rule
+
+#### Conventions
+
+<!-- prettier-ignore -->
+Refer to the [wiki](https://github.com/DragonTiger92/karly-ts-next/wiki#conventions).
+
 ## Miscellaneous
 
 ### Branching Strategy
