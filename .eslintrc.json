@@ -3,14 +3,15 @@
     "next/core-web-vitals",
     "next/typescript",
     "prettier",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
+    "plugin:jsx-a11y/recommended"
   ],
-  "plugins": [
-    "react",
-    "import",
-    "@typescript-eslint",
-    "markdown"
-  ],
+  "plugins": ["react", "import", "@typescript-eslint", "markdown", "jsx-a11y"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
   "rules": {
     "quotes": [
       "error",
@@ -19,18 +20,9 @@
         "avoidEscape": true
       }
     ],
-    "semi": [
-      "error",
-      "always"
-    ],
-    "arrow-parens": [
-      "error",
-      "always"
-    ],
-    "indent": [
-      "error",
-      2
-    ],
+    "semi": ["error", "always"],
+    "arrow-parens": ["error", "always"],
+    "indent": ["error", 2],
     "max-len": [
       "error",
       {
@@ -38,10 +30,7 @@
         "ignoreUrls": true
       }
     ],
-    "eqeqeq": [
-      "error",
-      "always"
-    ],
+    "eqeqeq": ["error", "always"],
     "no-console": "warn",
     "no-unused-vars": [
       "warn",
@@ -52,10 +41,7 @@
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
-    "react/jsx-indent": [
-      "error",
-      2
-    ],
+    "react/jsx-indent": ["error", 2],
     "react/jsx-curly-spacing": [
       "error",
       {
@@ -88,19 +74,36 @@
       }
     ],
     "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/explicit-function-return-type": "off"
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "jsx-a11y/alt-text": "warn",
+    "jsx-a11y/anchor-is-valid": [
+      "warn",
+      {
+        "aspects": ["noHref", "invalidHref", "preferButton"]
+      }
+    ],
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "jsx-a11y/no-noninteractive-tabindex": "error",
+    "jsx-a11y/no-static-element-interactions": "warn",
+    "jsx-a11y/click-events-have-key-events": "warn",
+    "jsx-a11y/heading-has-content": "warn",
+    "jsx-a11y/no-autofocus": "warn",
+    "jsx-a11y/no-redundant-roles": "warn"
   },
   "overrides": [
     {
-      "files": [
-        "**/*.md"
-      ],
+      "files": ["**/*.md"],
       "processor": "markdown/markdown"
     },
     {
-      "files": [
-        "**/*.md/*.js"
-      ],
+      "files": ["**/*.md/*.js"],
       "rules": {
         "no-console": "off"
       }
