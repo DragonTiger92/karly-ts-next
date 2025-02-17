@@ -6,13 +6,31 @@
     "plugin:storybook/recommended",
     "plugin:jsx-a11y/recommended"
   ],
-  "plugins": ["react", "import", "@typescript-eslint", "markdown", "jsx-a11y"],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "import",
+    "@typescript-eslint",
+    "markdown",
+    "jsx-a11y"
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
     }
   },
   "rules": {
+    "react/display-name": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-function-return-type": "warn",
     "quotes": [
       "error",
       "single",
@@ -26,7 +44,7 @@
     "max-len": [
       "error",
       {
-        "code": 80,
+        "code": 100,
         "ignoreUrls": true
       }
     ],
@@ -67,14 +85,6 @@
       }
     ],
     "import/newline-after-import": "error",
-    "@typescript-eslint/no-unused-vars": [
-      "warn",
-      {
-        "argsIgnorePattern": "^_"
-      }
-    ],
-    "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
     "jsx-a11y/alt-text": "warn",
     "jsx-a11y/anchor-is-valid": [
       "warn",
